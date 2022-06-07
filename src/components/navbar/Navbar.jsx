@@ -8,15 +8,22 @@ export const Navbar = () => {
   const navigationRef = useRef();
   const displayNav = () => {
     navigationRef.current.classList.toggle("responsive");
+    window.scrollTo(0, 0);
   };
 
   return (
     <StyledHeader>
-      <h3>Logo</h3>
+      <h3>Henrik Turøy</h3>
       <nav ref={navigationRef}>
-        <Link to="/">Home</Link>
-        <Link to="projects">Projects</Link>
-        <Link to="about">About</Link>
+        <Link to="/" onClick={displayNav}>
+          Home
+        </Link>
+        <Link to="projects" onClick={displayNav}>
+          Projects
+        </Link>
+        <Link to="about" onClick={displayNav}>
+          About
+        </Link>
         <StyledButton className="close-nav" onClick={displayNav}>
           <FaTimes />
         </StyledButton>

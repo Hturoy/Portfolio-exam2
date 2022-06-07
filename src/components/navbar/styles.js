@@ -34,6 +34,7 @@ export const StyledHeader = styled.header`
       align-items: center;
       justify-content: center;
       gap: 1.5rem;
+      z-index: 100;
       background-color: ${mainColor};
       transition: 0.5s;
       transform: translateY(-100vh);
@@ -51,7 +52,7 @@ export const StyledHeader = styled.header`
 
 export const StyledNav = styled.nav``;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.span`
   padding: 5px;
   cursor: pointer;
   background-color: transparent;
