@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { StyledButton } from "./styles";
+import { StyledButton, StyledHeader } from "./styles";
 
 export const Navbar = () => {
   const navigationRef = useRef();
@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
+    <StyledHeader>
       <h3>Logo</h3>
       <nav ref={navigationRef}>
         <Link to="/">Home</Link>
@@ -21,9 +21,9 @@ export const Navbar = () => {
           <FaTimes />
         </StyledButton>
       </nav>
-      <StyledButton onClick={displayNav}>
+      <StyledButton className="open-nav" onClick={displayNav}>
         <FaBars />
       </StyledButton>
-    </header>
+    </StyledHeader>
   );
 };
