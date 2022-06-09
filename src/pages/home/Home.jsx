@@ -37,7 +37,6 @@ export const Home = () => {
           </Link>
         </div>
       </TopSection>
-      {/*  */}
       <BottomSection>
         <h3>This is me</h3>
         <ImageFrame>

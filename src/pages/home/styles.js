@@ -6,6 +6,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: left;
   background-color: ${secondary};
+  @media (min-width: 1240px) {
+    padding: 0 7rem;
+  }
 `;
 
 export const TopSection = styled.div`
