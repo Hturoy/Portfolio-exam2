@@ -4,7 +4,7 @@ import { secondary } from "../../utils/colors";
 
 const MotionDiv = motion.div;
 
-export const Container = styled.div`
+export const Container = styled.MotionDiv`
   background-color: ${secondary};
   width: 100%;
   display: flex;

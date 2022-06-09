@@ -15,6 +15,11 @@ export const Container = styled.div`
     align-items: center;
     width: 90%;
   }
+  @media (max-width: 500px) {
+    padding: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 `;
 
 export const ImageFrame = styled.div`
@@ -27,10 +32,15 @@ export const ImageFrame = styled.div`
     height: 100%;
     width: 100%;
     object-fit: cover;
+    @media (max-width: 500px) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
   }
 
   @media (max-width: 1024px) {
     width: 90%;
+    padding: 0;
     height: 100%;
   }
   @media (max-width: 500px) {
