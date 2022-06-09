@@ -1,4 +1,4 @@
-import { Container, ImageFrame, TextFrame, AltTag } from "./styles";
+import { Container, ImageFrame, TextFrame } from "./styles";
 
 export const ProjectCard = (props) => {
   return (
@@ -8,8 +8,9 @@ export const ProjectCard = (props) => {
       </ImageFrame>
       <TextFrame>
         <h1>{props.project}</h1>
-        <button>View this project</button>
-
+        <a target="blank" href={props.link}>
+          <button>View this project</button>
+        </a>
         <p>{props.description}</p>
       </TextFrame>
     </Container>
