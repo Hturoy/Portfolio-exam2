@@ -25,14 +25,14 @@ export const Container = styled.div`
 
 export const ImageFrame = styled.div`
   width: 50%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   padding: 1rem;
   img {
     border-radius: 0.5rem;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     @media (max-width: 500px) {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -56,7 +56,7 @@ export const TextFrame = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
-  height: 100%;
+  min-height: 100%;
 
   p {
     font-size: 18px;
