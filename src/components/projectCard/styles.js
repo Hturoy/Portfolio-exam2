@@ -23,10 +23,10 @@ export const ImageFrame = styled.div`
   display: flex;
   padding: 1rem;
   img {
+    border-radius: 0.5rem;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 2rem;
   }
 
   @media (max-width: 1024px) {
