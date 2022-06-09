@@ -4,8 +4,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   max-width: 1024px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 2rem 0;
+  border-radius: 2rem;
   padding: 2rem 2rem;
   max-height: 400px;
   @media (max-width: 1024px) {

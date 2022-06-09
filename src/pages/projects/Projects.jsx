@@ -7,19 +7,22 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectCard
-        project="test"
+        project="Project #1"
         imageSrc={projectPlaceHolder}
         description="this is filler text for late do not conserne yourself with whats inside this p tag, plase stop looking, i just need enough text to make the styling work, and im not really sure how much i need so im just gonna stop typing now"
+        AltTag="the project"
       ></ProjectCard>
       <ProjectCard
-        project="test"
+        project="Project #2"
         imageSrc={projectPlaceHolder}
         description="this is filler text for late do not conserne yourself with whats inside this p tag, plase stop looking, i just need enough text to make the styling work, and im not really sure how much i need so im just gonna stop typing now"
+        AltTag="the project"
       ></ProjectCard>
       <ProjectCard
-        project="test"
+        project="Project #3"
         imageSrc={projectPlaceHolder}
         description="this is filler text for late do not conserne yourself with whats inside this p tag, plase stop looking, i just need enough text to make the styling work, and im not really sure how much i need so im just gonna stop typing now"
+        AltTag="the project"
       ></ProjectCard>
     </Container>
   );
