@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lightMain, mainColor, textColor } from "../../utils/colors";
+import { mainColor, secondary, textOndark } from "../../utils/colors";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -8,7 +8,8 @@ export const StyledHeader = styled.header`
   height: 75px;
   background-color: ${mainColor};
   h3 {
-    color: ${textColor};
+    color: ${textOndark};
+
     padding: 0 2rem;
   }
   .open-nav {
@@ -17,9 +18,9 @@ export const StyledHeader = styled.header`
   a {
     margin: 0 2rem;
     font-size: 1.5rem;
-    color: ${textColor};
+    color: ${textOndark};
     :hover {
-      color: ${lightMain};
+      color: ${secondary};
     }
   }
 
@@ -59,7 +60,8 @@ export const StyledButton = styled.span`
   border: none;
   font-size: 1.5rem;
   outline: none;
-  color: ${textColor};
+  stroke: ${textOndark};
+  color: ${textOndark};
   visibility: hidden;
   opacity: 0;
 

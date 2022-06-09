@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { textColor } from "../../utils/colors";
 
 export const Container = styled.div`
   display: flex;
@@ -51,10 +52,15 @@ export const ImageFrame = styled.div`
 export const TextFrame = styled.div`
   display: flex;
   padding: 1rem;
+  color: ${textColor};
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
   height: 100%;
+
+  p {
+    font-size: 18px;
+  }
   @media (max-width: 1024px) {
     width: 90%;
     height: 100%;

@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { mainColor, secondary, textColor } from "../../utils/colors";
+import {
+  mainColor,
+  secondary,
+  textColor,
+  textOndark,
+} from "../../utils/colors";
 
 export const Container = styled.div`
   display: flex;
@@ -21,7 +26,7 @@ export const TopSection = styled.div`
   justify-content: space-evenly;
 
   h1 {
-    color: ${textColor};
+    color: ${textOndark};
     font-size: 3rem;
     text-shadow: 9px 8px 15px rgba(0, 0, 0, 0.6);
     @media (max-width: 380px) {
@@ -29,7 +34,7 @@ export const TopSection = styled.div`
     }
   }
   h2 {
-    color: ${mainColor};
+    color: ${textColor};
     font-size: 1.8rem;
     text-shadow: 9px 8px 15px rgba(0, 0, 0, 0.6);
     @media (max-width: 380px) {
@@ -51,6 +56,7 @@ export const BottomSection = styled.div`
     max-width: 300px;
   }
   h3 {
+    color: ${textColor};
     font-size: 1.8rem;
   }
 `;
