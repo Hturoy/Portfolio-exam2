@@ -9,12 +9,26 @@ export const Footer = () => {
       <FooterContainer>
         <h3>Socials</h3>
         <FlexRow>
-          <p className="SocialLink">Github </p>
-          <FaGithub></FaGithub>
+          <a href="https://github.com/Hturoy" target="_blank">
+            <p className="SocialLink">Github </p>
+          </a>
+          <a href="https://github.com/Hturoy" target="_blank">
+            <FaGithub></FaGithub>
+          </a>
         </FlexRow>
         <FlexRow>
-          <p className="SocialLink">LinkedIn </p>
-          <FaLinkedin></FaLinkedin>
+          <a
+            href="https://www.linkedin.com/in/henrik-tur%C3%B8y-48a76316a/"
+            target="_blank"
+          >
+            <p className="SocialLink">LinkedIn </p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/henrik-tur%C3%B8y-48a76316a/"
+            target="_blank"
+          >
+            <FaLinkedin></FaLinkedin>
+          </a>
         </FlexRow>
       </FooterContainer>
       <FooterContainer>

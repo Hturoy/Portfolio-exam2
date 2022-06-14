@@ -60,7 +60,7 @@ export const FlexRow = styled.div`
       transition: 0.3s;
 
       color: ${lightMain};
-      transform: scale(1.2);
+      transform: scale(1.1);
       cursor: pointer;
     }
   }
