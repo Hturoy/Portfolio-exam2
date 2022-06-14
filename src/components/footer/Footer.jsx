@@ -1,19 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FooterContainer, StyledFooter } from "./styles";
+import { FooterContainer, StyledFooter, FlexRow } from "./styles";
+import { FaGithub, FaLinkedin, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <FooterContainer>
         <h3>Socials</h3>
-        <p>Github</p>
-        <p>LinkedIn</p>
+        <FlexRow>
+          <p className="SocialLink">Github </p>
+          <FaGithub></FaGithub>
+        </FlexRow>
+        <FlexRow>
+          <p className="SocialLink">LinkedIn </p>
+          <FaLinkedin></FaLinkedin>
+        </FlexRow>
       </FooterContainer>
       <FooterContainer>
         <h3>Contact</h3>
-        <p>Henrikturoy@gmail.com</p>
-        <p>+47 950 47 996</p>
+        <FlexRow>
+          <p>Henrikturoy@gmail.com </p>
+          <FaMailBulk></FaMailBulk>
+        </FlexRow>
+        <FlexRow>
+          <p>+47 950 47 996 </p>
+          <FaPhoneAlt></FaPhoneAlt>
+        </FlexRow>
       </FooterContainer>
 
       <FooterContainer>

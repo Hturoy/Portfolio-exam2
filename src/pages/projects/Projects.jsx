@@ -1,11 +1,14 @@
 import React from "react";
 import { ProjectCard } from "../../components/projectCard/ProjectCard";
 import { DotaImg, FashionImg, HolidazeImg } from "../../utils/images";
-import { Container } from "./styles";
+import { Container, H1Div } from "./styles";
 
 export const Projects = () => {
   return (
     <Container>
+      <H1Div>
+        <h1>My projects</h1>
+      </H1Div>
       <ProjectCard
         project="Holidaze"
         imageSrc={HolidazeImg}
