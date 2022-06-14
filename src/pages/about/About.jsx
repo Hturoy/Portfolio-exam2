@@ -1,6 +1,15 @@
 import React from "react";
-import { portrait } from "../../utils/images";
+import {
+  CssLogo,
+  HtmlLogo,
+  JsLogo,
+  MotionLogo,
+  portrait,
+  ReactLogo,
+  StyledComponentsLogo,
+} from "../../utils/images";
 import { ImageFrame } from "../home/styles";
+import { LogoFrame, TechWrapper } from "./styles";
 import { ContainerTop, Wrapper } from "./styles";
 
 export const About = () => {
@@ -19,18 +28,42 @@ export const About = () => {
             </p>
           </article>
         </Wrapper>
-        <Wrapper>
+        <TechWrapper>
           <h2>Technologies</h2>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>REACT</li>
-            <li>STYLED COMPONENTS</li>
-            <li>FRAMER-MOTION</li>
-            <li>And more</li>
+            <LogoFrame>
+              <img src={HtmlLogo} alt="" />
+            </LogoFrame>
+            <LogoFrame>
+              <img src={CssLogo} alt="" />
+            </LogoFrame>
+            <LogoFrame>
+              <img src={ReactLogo} alt="" />
+            </LogoFrame>
+            <LogoFrame>
+              <img src={JsLogo} alt="" />
+            </LogoFrame>
+            <LogoFrame>
+              <img src={StyledComponentsLogo} alt="" />
+            </LogoFrame>
+            <LogoFrame>
+              <img src={MotionLogo} alt="" />
+            </LogoFrame>
           </ul>
-        </Wrapper>
+          <h2>Education</h2>
+          <ul className="Education">
+            <li>
+              Marketing and Salesmanagement - Høyskolen Kristiania(2018-2020)
+            </li>
+            <li>Frontend Development - Noroff(2020-2022)</li>
+          </ul>
+
+          <h2>Work</h2>
+          <ul className="Education">
+            <li>Sales - Power Norge AS (2016-Today)</li>
+            <li>Sales - Falck Alarm (2019-2020)</li>
+          </ul>
+        </TechWrapper>
       </ContainerTop>
     </>
   );
